@@ -1,0 +1,1 @@
+ALTER TABLE public.events ADD COLUMN IF NOT EXISTS parents_albums_count integer NOT NULL DEFAULT 0;

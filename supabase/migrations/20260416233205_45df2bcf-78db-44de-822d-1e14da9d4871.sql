@@ -1,0 +1,2 @@
+ALTER TABLE public.event_team ADD COLUMN member_id uuid REFERENCES public.brand_team_members(id) ON DELETE SET NULL;
+CREATE INDEX IF NOT EXISTS idx_event_team_member_id ON public.event_team(member_id);
